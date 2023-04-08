@@ -50,8 +50,24 @@ header {
     margin-left: 40px;
     transition: 0.5s;
 }
+  
+  .btnLogin-popup a {
+    color: inherit; /* hereda el color del botón */
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  button:hover a {
+    color: white; /* cambia el color del enlace cuando se hace hover en el botón */
+    text-decoration: none;
+  }
+  
+  .btnLogin-popup:hover {
+    background-color: #3c4858;
+  }
+  
 
-.navigation .btnLogin-popup a {
+/* .navigation .btnLogin-popup a {
     color: white;
     text-decoration: none;
     transition: 0.5s;
@@ -64,12 +80,12 @@ header {
 
 .navigation .btnLogin-popup a:hover {
     color: #162928;
-}
+} */
 
 .wrapper {
     position: relative;
     width: 400px;
-    height: 440px;
+    height: 520px;
     background: transparent;
     border: 2px solid rgba(255,255,255,.5);
     border-radius: 20px;
@@ -113,10 +129,10 @@ header {
 
 .input-box input:focus~label,
 .input-box input:valid~label {
-    top: -5px;
-    /* left: 0;
+    top: -2px;
+    /* left: 0; */
     font-size: 0.8em;
-    color: #778894; */
+    color: #778894;
 }
 
 .input-box input {
@@ -139,6 +155,56 @@ header {
     line-height: 57px;
 }
 
+.btn-upload {
+    color: white;
+    background-color: #778894;
+    border: none;
+    padding: 5px 10px; /* reducir el padding a la mitad */
+    font-size: 0.8em; /* reducir el tamaño de fuente a 80% */
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .btn-upload .icon {
+    margin-right: 5px;
+    font-size: 2em; /* aumentar el tamaño del icono al doble */
+    vertical-align: middle; /* centrar el icono verticalmente */
+  }
+  
+  .btn-upload:hover {
+    background-color: #3c4858;
+  }
+  
+  .btn-upload:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #90a4ae;
+  }
+  
+  input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  
+  input[type="file"]::before {
+    content: 'Choose File';
+    color: white;
+    background-color: #778894;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="file"]:hover::before {
+    background-color: #3c4858;
+  }
+  
+  input[type="file"]:focus::before {
+    outline: none;
+    box-shadow: 0 0 0 2px #90a4ae;
+  }
+  
 .remember-forgot {
     font-size: .9em;
     color: #778894;
@@ -175,7 +241,10 @@ input[type="checkbox"] {
     color: white;
     font-weight: 500;
     /* margin-top: px; */
-    transition: 0.5s;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #7788948a;
 }
 
 .login-register {

@@ -104,10 +104,9 @@ header {
 
 .input-box input:focus~label,
 .input-box input:valid~label {
-    top: -5px;
-    /* left: 0;
+    top: -2px;
     font-size: 0.8em;
-    color: #778894; */
+    color: #778894;
 }
 
 .input-box input {
